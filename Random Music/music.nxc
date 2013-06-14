@@ -1,0 +1,12 @@
+int duration;
+int note;
+task main()
+{
+     duration = Random(400);
+     repeat(duration)
+     {
+          note = Random(400);
+          PlayTone(note,400);
+          Wait(500);
+     }
+}

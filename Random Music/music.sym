@@ -1,0 +1,104 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__signed_stack_002main	6	1	0	4	2
+1	__signed_stack_001main	6	1	4	4	4
+2	__D0main	6	1	8	4	7
+3	__signed_stack_003main	6	1	12	4	2
+4	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	16	4	2
+5	__constVal65536	6	0	20	4	2
+6	__signed_stack_004main	6	1	24	4	2
+7	__constVal32768	6	0	28	4	2
+8	__RandomTmp	5	1	32	4	14
+9	__SPTArgsMutex	9	0	36	4	2
+10	____initialize_global_data_return	1	1	40	1	3
+11	__constVal1	2	0	41	1	1
+12	__PFTmp	1	1	42	1	1
+13	__SPTArgs	8	0	5	8	6
+14	__SPTArgs.Result	2	1	44	1	6
+15	__SPTArgs.Frequency	3	1	46	2	6
+16	__SPTArgs.Duration	3	1	48	2	6
+17	__SPTArgs.Loop	1	1	50	1	6
+18	__SPTArgs.Volume	1	1	51	1	6
+19	__RandomArgs	8	0	1	4	6
+20	__RandomArgs.Result	4	1	52	2	6
+#SOURCES
+Clump	Line	PC	Source
+0	4	0	#line 4 "C:\Users\triforce\Desktop\music.nxc"
+0	5	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	4	2	#line 4 "C:\Users\triforce\Desktop\music.nxc"
+0	4	2	#line 4 "C:\Users\triforce\Desktop\music.nxc"
+0	5	2		set __D0main, 400
+0	5	5	#line 5 "C:\Users\triforce\Desktop\music.nxc"
+0	6	5	#pragma macro 8
+0	6	5		syscall 24, __RandomArgs
+0	6	8		mov __RandomTmp, __RandomArgs.Result
+0	6	10		add __RandomTmp, __RandomArgs.Result, __constVal32768
+0	6	14		mul __RandomTmp, __RandomTmp, __D0main
+0	6	18		div __RandomTmp, __RandomTmp, __constVal65536
+0	3823	22	#line 3823 "C:\Users\triforce\Desktop\music.nxc"
+0	5	22	#line 5 "C:\Users\triforce\Desktop\music.nxc"
+0	5	22	#line 5 "C:\Users\triforce\Desktop\music.nxc"
+0	6	22	#line 6 "C:\Users\triforce\Desktop\music.nxc"
+0	7	22		mov __signed_stack_001main, __RandomTmp
+0	7	24	#line 7 "C:\Users\triforce\Desktop\music.nxc"
+0	7	24	#line 7 "C:\Users\triforce\Desktop\music.nxc"
+0	8	24		sub __signed_stack_001main, __signed_stack_001main, __constVal1
+0	7	28	#line 7 "C:\Users\triforce\Desktop\music.nxc"
+0	8	28		brtst 0, __NXC_Label_494, __signed_stack_001main
+0	7	31	#line 7 "C:\Users\triforce\Desktop\music.nxc"
+0	8	31		set __D0main, 400
+0	8	34	#line 8 "C:\Users\triforce\Desktop\music.nxc"
+0	9	34	#pragma macro 8
+0	9	34		syscall 24, __RandomArgs
+0	9	37		mov __RandomTmp, __RandomArgs.Result
+0	9	39		add __RandomTmp, __RandomArgs.Result, __constVal32768
+0	9	43		mul __RandomTmp, __RandomTmp, __D0main
+0	9	47		div __RandomTmp, __RandomTmp, __constVal65536
+0	3845	51	#line 3845 "C:\Users\triforce\Desktop\music.nxc"
+0	8	51	#line 8 "C:\Users\triforce\Desktop\music.nxc"
+0	8	51	#line 8 "C:\Users\triforce\Desktop\music.nxc"
+0	8	51	#line 8 "C:\Users\triforce\Desktop\music.nxc"
+0	9	51		mov __signed_stack_002main, __RandomTmp
+0	8	53	#line 8 "C:\Users\triforce\Desktop\music.nxc"
+0	8	53	#line 8 "C:\Users\triforce\Desktop\music.nxc"
+0	9	53		set __signed_stack_003main, 400
+0	8	56	#line 8 "C:\Users\triforce\Desktop\music.nxc"
+0	8	56	#line 8 "C:\Users\triforce\Desktop\music.nxc"
+0	9	56		set __signed_stack_004main, 4
+0	8	59	#line 8 "C:\Users\triforce\Desktop\music.nxc"
+0	8	59	#line 8 "C:\Users\triforce\Desktop\music.nxc"
+0	9	59		set __D0main, 0
+0	9	62	#line 9 "C:\Users\triforce\Desktop\music.nxc"
+0	10	62		acquire __SPTArgsMutex
+0	9	63	#line 9 "C:\Users\triforce\Desktop\music.nxc"
+0	10	63		mov __SPTArgs.Frequency, __signed_stack_002main
+0	9	65	#line 9 "C:\Users\triforce\Desktop\music.nxc"
+0	10	65		mov __SPTArgs.Duration, __signed_stack_003main
+0	9	67	#line 9 "C:\Users\triforce\Desktop\music.nxc"
+0	10	67		mov __SPTArgs.Volume, __signed_stack_004main
+0	9	69	#line 9 "C:\Users\triforce\Desktop\music.nxc"
+0	10	69		mov __SPTArgs.Loop, __D0main
+0	9	71	#line 9 "C:\Users\triforce\Desktop\music.nxc"
+0	10	71		syscall 10, __SPTArgs
+0	9	74	#line 9 "C:\Users\triforce\Desktop\music.nxc"
+0	10	74		mov __D0main, __SPTArgs.Result
+0	9	76	#line 9 "C:\Users\triforce\Desktop\music.nxc"
+0	10	76		release __SPTArgsMutex
+0	9	77	#line 9 "C:\Users\triforce\Desktop\music.nxc"
+0	9	77	#line 9 "C:\Users\triforce\Desktop\music.nxc"
+0	10	77		set __Wait_7qG2_ms_7qG2_000_inline_main, 500
+0	9	80	#line 9 "C:\Users\triforce\Desktop\music.nxc"
+0	7921	80	#line 7921 "NXCDefs.h"
+0	7922	80		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	83	#line 7921 "NXCDefs.h"
+0	10	83	#line 10 "C:\Users\triforce\Desktop\music.nxc"
+0	13	83	#line 13 "C:\Users\triforce\Desktop\music.nxc"
+0	14	83		jmp __NXC_Label_493
+0	13	85	#line 13 "C:\Users\triforce\Desktop\music.nxc"
+0	14	85		exit -1, -1
+1	14	0	#line 14 "C:\Users\triforce\Desktop\music.nxc"
+1	15	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\triforce\Desktop\music.nxc
+1	__initialize_global_data	88	C:\Users\triforce\Desktop\music.nxc

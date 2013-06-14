@@ -1,0 +1,96 @@
+#define VOL 3
+#define PLAY_DURATION 125
+#define WAIT_DURATION 125
+#define B  494
+#define AS 466
+#define A  440
+#define GS 415
+#define G  392
+#define FS 370
+#define F  349
+#define E  330
+#define DS 311
+#define D  294
+#define CS 277
+#define C  262
+
+task main()
+{
+//////////////////////////////////////////////////////////////////////
+    repeat(3)
+    {
+        repeat(2)
+        {
+            repeat(4)
+            {
+                 PlayToneEx(FS, PLAY_DURATION, VOL, FALSE);
+                 Wait(WAIT_DURATION);
+            }
+        }
+    }
+//////////////////////////////////////////////////////////////////////
+    repeat(3)
+    {
+        PlayToneEx(FS, PLAY_DURATION,VOL, FALSE);
+        Wait(WAIT_DURATION);
+    }
+    repeat(3)
+    {
+        PlayToneEx(G, PLAY_DURATION,VOL, FALSE);
+        Wait(WAIT_DURATION);
+    }
+    repeat(3){
+        PlayToneEx(A, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);
+    }
+//////////////////////////////////////////////////////////////////////
+    PlayToneEx(FS, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);
+    PlayToneEx(G, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);
+    PlayToneEx(A, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);
+    
+    PlayToneEx(B, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);
+    PlayToneEx(C, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);
+    PlayToneEx(D, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);
+    
+    PlayToneEx(E, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);
+    PlayToneEx(FS, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);//MAY BE INCORRECT NOTE
+    PlayToneEx(G, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);
+    
+    PlayToneEx(D, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);
+    PlayToneEx(C, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);
+    PlayToneEx(B, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);
+    
+    PlayToneEx(A, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);
+    PlayToneEx(G, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);
+    PlayToneEx(FS, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);
+    
+    PlayToneEx(FS, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);
+    PlayToneEx(G, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);
+    PlayToneEx(A, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);
+    
+    PlayToneEx(B, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);
+    PlayToneEx(C, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);
+    PlayToneEx(D, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);
+    //////////////////////////////////////////////////
+    PlayToneEx(D, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);
+    PlayToneEx(DS, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);
+    PlayToneEx(E, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);
+    
+    PlayToneEx(A, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);
+    PlayToneEx(247, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);//B FLAT
+    PlayToneEx(B, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);
+    
+    PlayToneEx(E, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);
+    PlayToneEx(FS, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);
+    PlayToneEx(FS, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);
+    //////////////////////////////////////////////////
+    repeat(9001){
+        repeat(2){
+            repeat(4){
+                 PlayToneEx(FS, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);
+            }
+        }
+        PlayToneEx(FS, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);
+        PlayToneEx(G, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);
+        PlayToneEx(GS, PLAY_DURATION,VOL, FALSE); Wait(WAIT_DURATION);
+    }
+}
